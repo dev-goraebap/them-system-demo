@@ -1,0 +1,37 @@
+@plugin "daisyui/theme" {
+    name: "hanami";
+    --color-base-100: oklch(1 0.02 156.743);
+    --color-base-200: oklch(1 0.02 156.743);
+    --color-base-300: oklch(1 0.02 156.743);
+    --color-base-content: oklch(30% 0.1 105);
+}
+
+@plugin "daisyui/theme" {
+    name: "candyfluff";
+    --color-base-100: oklch(1.900 0.04 18.334);
+    --color-base-200: oklch(1.900 0.04 18.334);
+    --color-base-300: oklch(1.900 0.04 18.334);
+    --color-base-content: oklch(0.500 0.04 18.334);
+}
+
+@plugin "daisyui/theme" {
+    name: "snowstorm";
+    --color-base-100: oklch(0.98 0.01 240);
+    --color-base-200: oklch(0.98 0.01 240);
+    --color-base-300: oklch(0.8 0.03 210); 
+    --color-base-content: oklch(0.3 0.05 250);
+}
+
+@layer utilities {
+    [data-theme="hanami"] .primary-bg {
+        @apply bg-gradient-to-tr from-red-100  to-green-100
+    }
+
+    [data-theme="candyfluff"] .primary-bg {
+        @apply bg-gradient-to-tr from-red-100  to-red-200
+    }
+
+    [data-theme="snowstorm"] .primary-bg {
+        background: linear-gradient(to top right, #dbeafe, #93c5fd, #3b82f6);
+    }
+}

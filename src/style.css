@@ -1,1 +1,56 @@
 @import "tailwindcss";
+@plugin "daisyui";
+@import "./theme.css";
+
+@font-face {
+    font-family: 'GothicA1';
+    src: url('./assets/fonts/GothicA1-Light.ttf');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'GothicA1';
+    src: url('./assets/fonts/GothicA1-Regular.ttf');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'GothicA1';
+    src: url('./assets/fonts/GothicA1-Bold.ttf');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'GothicA1';
+    src: url('./assets/fonts/GothicA1-Black.ttf');
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: 'OpenSans';
+    src: url('./assets/fonts/OpenSans-Light.ttf');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'OpenSans';
+    src: url('./assets/fonts/OpenSans-Regular.ttf');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'OpenSans';
+    src: url('./assets/fonts/OpenSans-Bold.ttf');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'OpenSans';
+    src: url('./assets/fonts/OpenSans-ExtraBold.ttf');
+    font-weight: 900;
+}
+
+body {
+    margin: 0;
+    font-family: OpenSans, GothicA1, sans-serif;
+}
