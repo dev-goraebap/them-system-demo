@@ -72,7 +72,7 @@ class ThemePicker extends LitElement {
             <div id="buttonContainer">
                 <button id="lightBtn" data-id="light">
                     <div></div>
-                    <div>맑음</div>
+                    <div>기본</div>
                 </button>
                 <button id="darkBtn" data-id="dark">
                     <div></div>
