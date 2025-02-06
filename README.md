@@ -4,3 +4,4 @@ web component(lit) 으로 간단한 테마 변경 컴포넌트 구현. tailwindc
 ### 데모 사이트 링크
 https://theme-system-demo.web.app/
 
+![thumbnail](https://github.com/dev-goraebap/them-system-demo/blob/develop/src/assets/imgs/readmefile.png)
