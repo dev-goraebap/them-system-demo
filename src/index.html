@@ -1,12 +1,89 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css" />
     <title>Theme System Demo 🐣</title>
+
+    <script src="./ui/theme-picker/theme-picker.ui.js" type="module"></script>
 </head>
-<body>
-    <div>hello world</div>
+
+<body data-theme="light">
+    <div class="fixed right-0 top-0 p-4">
+        <a href="https://github.com/dev-goraebap/them-system-demo" target="_blank">
+            <img src="./assets/imgs/github-mark.png" class="w-8 h-8"/>
+        </a>
+    </div>
+
+    <div #app class="flex justify-center w-full h-screen p-4 overflow-hidden overflow-y-auto primary-bg ">
+        <div @container class="w-full max-w-md">
+            <div class="text-center text-2xl font-bold p-4">App Theme</div>
+            <div @card class="p-4 rounded-xl bg-base-200">
+                <div class="text-2xl font-bold">
+                    메시지
+                </div>
+                <div @messageContainer class="mt-4 flex flex-col gap-4">
+                    <div @messageBox class="flex justify-start items-start gap-2">
+                        <div class="indicator min-w-12 w-12 h-12 object-cover">
+                            <span
+                                class="indicator-item indicator-middle indicator-start badge badge-primary w-2 h-2 p-1 border-base-100 border-2"></span>
+                            <img src="./assets/imgs/avatar01.jpg" class="rounded-full" />
+                        </div>
+                        <div>
+                            <div class="text-sm font-semibold">뚱이</div>
+                            <div class="text-sm">컴퓨터는 바보가 아니야. 바보 같은 명령을 따를 뿐이야.</div>
+                        </div>
+                        <div class="text-xs ml-auto whitespace-nowrap">2분</div>
+                    </div>
+                    <div @messageBox class="flex justify-start items-start gap-2">
+                        <div class="indicator min-w-12 w-12 h-12 rounded-full">
+                            <span
+                                class="indicator-item indicator-middle indicator-start badge badge-primary w-2 h-2 p-1 border-base-100 border-2"></span>
+                            <img src="./assets/imgs/avatar05.jpg" class="rounded-full" />
+                        </div>
+                        <div>
+                            <div class="text-sm font-semibold">핑핑이</div>
+                            <div class="text-sm">제 컴퓨터에서는 잘 돌아가는데요?</div>
+                        </div>
+                        <div class="text-xs ml-auto whitespace-nowrap">8분</div>
+                    </div>
+                    <div @messageBox class="flex justify-start items-start gap-2">
+                        <div class="relative min-w-12 w-12 h-12 rounded-full">
+                            <img src="./assets/imgs/avatar06.jpg"
+                                class="absolute w-8 h-8 rounded-full border-base-200 border-2" />
+                            <img src="./assets/imgs/avatar07.jpg"
+                                class="absolute w-8 h-8 right-0 bottom-0 rounded-full border-base-200 border-2" />
+                        </div>
+                        <div>
+                            <div class="text-base-content/70 font-semibold text-sm">미래가젯연구소</div>
+                            <div class="text-base-content/70 text-sm">코드가 왜 작동하는지 모르겠어.</div>
+                        </div>
+                        <div class="text-base-content/70 text-xs ml-auto whitespace-nowrap">1시간</div>
+                    </div>
+                    <div @messageBox class="flex justify-start items-start gap-2">
+                        <div class="min-w-12 w-12 h-12 rounded-full">
+                            <img src="./assets/imgs/avatar10.jpg" class="rounded-full h-full" />
+                        </div>
+                        <div>
+                            <div class="text-base-content/70 font-semibold text-sm">해파링</div>
+                            <div class="text-base-content/70 text-sm">이것이 슈타인즈 게이트의 선택이다!!<br />아아.. 엘. 프사이. 콩그루..</div>
+                        </div>
+                        <div class="text-base-content/70 text-xs ml-auto whitespace-nowrap">4시간</div>
+                    </div>
+                </div>
+
+                <div @seeMore class="text-center text-base-content/70 text-sm mt-4">이전 대화 더 보기</div>
+            </div>
+
+            <br />
+
+            <!-- custom element ✨ -->
+            <ui-theme-picker></ui-theme-picker>
+        </div>
+    </div>
+
 </body>
+
 </html>
